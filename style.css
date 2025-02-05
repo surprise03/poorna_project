@@ -395,7 +395,7 @@ body{
 
 /* trending products section */
 .trending-section{
-    margin: 50px;
+    margin-top:5%;
 }
 .trending-heading{
     display: flex;
@@ -1654,7 +1654,7 @@ h1,.h4,h2{
 
 
 .category-and-buttons{
-    margin-top: 10%;
+    margin-top: 30%;
     width: 100vw;
 }
 
