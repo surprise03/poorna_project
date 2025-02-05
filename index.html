@@ -1,0 +1,1162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Grocerymart,foodmart,online website,order online,food delivery">
+    <meta property="og:title" content="The Rock" />
+    <meta property="og:type" content="video.movie" />
+    <meta property="og:url" content="https://www.imdb.com/title/tt0117500/" />
+    <meta property="og:image" content="https://ia.media-imdb.com/images/rock.jpg" />
+    <title>FoodMart-A Grocery Store</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <!-- nav bar -1 -->
+    <header class="main-header">
+        <div class="logo-container">
+            <img class="logo" src="./images/logo.png" alt="">
+        </div>
+        <div class="header-container-1">
+            <select name="categories" id="categories" class="categories">
+                <option value="" selected>All Categories</option>
+                <option value="Categories1">Fruits and Veggies</option>
+                <option value="Categories2">Frozens</option>
+                <option value="Categories3">Baked Items</option>
+                <option value="Categories4">Sweets and Muffins</option>
+            </select>
+            <label for="search"></label>
+            <input type="text" placeholder="Search for more than 20,000 products" name="name" id="search">
+            <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="darkslategray"
+                class="bi bi-search" viewBox="0 0 16 16">
+                <path
+                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+            </svg>
+        </div>
+        <div class="header-container-2">
+            <span style="text-align: right;">For Support? <br> <b style="font-size: 1.2rem;"> +91 5454545454 </b></span>
+            <div class="header-icon1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z" />
+                </svg>
+            </div>
+            <div class="header-icon2" style="display: flex; justify-content: center; align-items: center; background-color: rgb(225, 223, 223); padding: 15px; border-radius: 50%; height: 45px;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="25" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                    <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
+                </svg>
+            </div>
+            <div class="cart-container">
+                <label for="cart-con">
+                    <span>Your Cart
+                        <img src="./images/down-arrow.png" alt="" width="15px" height="15px">
+                    </span>
+                    <p style="color: black; font-weight: bold; font-size: 1.2rem;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-currency-rupee" viewBox="0 0 16 16">
+                            <path d="M4 3.06h2.726c1.22 0 2.12.575 2.325 1.724H4v1.051h5.051C8.855 7.001 8 7.558 
+                                6.788 7.558H4v1.317L8.437 14h2.11L6.095 8.884h.855c2.316-.018 3.465-1.476 
+                                3.688-3.049H12V4.784h-1.345c-.08-.778-.357-1.335-.793-1.732H12V2H4z" />
+                        </svg> 1280.00
+                    </p>
+                </label>
+                <input type="checkbox" id="cart-con">
+
+                <!-- Off-canvas popup -->
+                <div class="side-popup">
+                    <div class="x-icon">
+                        <label for="cart-con" class="x-icons">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="darkslategray"
+                                class="bi bi-x" viewBox="0 0 16 16">
+                                <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 
+                                        .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 
+                                        2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708" />
+                            </svg>
+                        </label>
+                    </div>
+                    <input type="checkbox" id="x-icon" name="x-icon">
+
+                    <h3 class="popup-value">
+                        <span style="font-size: 1.8rem;">Your Cart</span>
+                        <span>3</span>
+                    </h3>
+                    <ul class="cart-list">
+                        <li>
+                            <div class="list-1">
+                                <h3>celebrations</h3>
+                                <small>Brief description</small>
+                            </div>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor"
+                                    class="bi bi-currency-rupee" viewBox="0 0 16 16">
+                                    <path
+                                        d="M4 3.06h2.726c1.22 0 2.12.575 2.325 1.724H4v1.051h5.051C8.855 7.001 8 7.558 6.788 7.558H4v1.317L8.437 14h2.11L6.095 8.884h.855c2.316-.018 3.465-1.476 3.688-3.049H12V4.784h-1.345c-.08-.778-.357-1.335-.793-1.732H12V2H4z" />
+                                </svg> 159</span>
+                        </li>
+                        <li>
+                            <div class="list-2">
+                                <h3>Fresh Grapes</h3>
+                                <small>Brief description</small>
+                            </div>
+                            <span><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor"
+                                    class="bi bi-currency-rupee" viewBox="0 0 16 16">
+                                    <path
+                                        d="M4 3.06h2.726c1.22 0 2.12.575 2.325 1.724H4v1.051h5.051C8.855 7.001 8 7.558 6.788 7.558H4v1.317L8.437 14h2.11L6.095 8.884h.855c2.316-.018 3.465-1.476 3.688-3.049H12V4.784h-1.345c-.08-.778-.357-1.335-.793-1.732H12V2H4z" />
+                                </svg> 292</span>
+                        </li>
+                        <li>
+                            <div class="list-3">
+                                <h3>veg atta noodles</h3>
+                                <small>Brief description</small>
+                            </div>
+                            <span><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor"
+                                    class="bi bi-currency-rupee" viewBox="0 0 16 16">
+                                    <path
+                                        d="M4 3.06h2.726c1.22 0 2.12.575 2.325 1.724H4v1.051h5.051C8.855 7.001 8 7.558 6.788 7.558H4v1.317L8.437 14h2.11L6.095 8.884h.855c2.316-.018 3.465-1.476 3.688-3.049H12V4.784h-1.345c-.08-.778-.357-1.335-.793-1.732H12V2H4z" />
+                                </svg> 117</span>
+                        </li>
+                        <li>
+                            <div class="list-4">
+                                <h3 style="color: darkslategray;">Total <br>(in rupees)</h3>
+                            </div>
+                            <span><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor"
+                                    class="bi bi-currency-rupee" viewBox="0 0 16 16">
+                                    <path
+                                        d="M4 3.06h2.726c1.22 0 2.12.575 2.325 1.724H4v1.051h5.051C8.855 7.001 8 7.558 6.788 7.558H4v1.317L8.437 14h2.11L6.095 8.884h.855c2.316-.018 3.465-1.476 3.688-3.049H12V4.784h-1.345c-.08-.778-.357-1.335-.793-1.732H12V2H4z" />
+                                </svg> 727</span>
+                        </li>
+                    </ul>
+                    <div class="button-container" style="display: flex; justify-content: center;">
+                        <input type="button" id="checkout-button" value="Continue to Checkout"
+                            style="background-color: yellowgreen; width: 100%; color: white; margin-top: 8px; padding: 10px; border: none; border-radius: 18px; font-size: 1.2rem;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- nav bar 2 -->
+    <div class="sub-header">
+        <select name="departments" id="departments">
+            <option value="departments1" selected>Shop by Departments</option>
+            <option value="departments2">Groceries</option>
+            <option value="departments3">Drinks</option>
+            <option value="departments4">Chocolates</option>
+        </select>
+        <a href="#">Women</a>
+        <a href="#">Men</a>
+        <a href="#">Kids</a>
+        <a href="#">Accessories</a>
+        <select name="pages" id="pages">
+            <option value="page" selected>All Pages</option>
+            <option value="about">About us</option>
+            <option value="shop">Shop</option>
+            <option value="cart">Cart</option>
+            <option value="single">Single product</option>
+            <option value="checkout">Checkout</option>
+            <option value="blog">Blog</option>
+            <option value="account">My Account</option>
+        </select>
+        <a href="#">Brand</a>
+        <a href="#">Sale</a>
+        <a href="#">Blog</a>
+    </div>
+    <!-- responsive for mobile container -->
+    <div class="responsive-for-mobile">
+        <div class="mobile-icons-con-1">
+            <center>
+                <img src="./images/user.png" width="20" alt="">
+                <img src="./images/heart-svgrepo-com (1).svg" width="20" alt="">
+                <img src="./images/shopping-cart.png" width="20" alt="">
+                <img src="./images/search.png" width="20" alt="">
+            </center>
+        </div>
+        <div class="hamburger-ion">
+            <center>
+                <img src="./images/menu.png" width="30" alt="">
+            </center>
+        </div>
+    </div>
+    <div class="hero-section">
+        <div class="bg-image-con">
+            <img src="https://themewagon.github.io/FoodMart/images/background-pattern.jpg" width="100%" height="100vh"
+                alt="">
+        </div>
+        <div class="fg-image-con">
+            <div class="flex-1-con">
+
+                <div class="text-of-image1-con">
+                    <p>100% Natural</p>
+                    <p>Fresh Smoothie <br> & Summer Juice</p>
+                    <p>We have exclusive offers on your first 3 orders...What are you waiting for? <br> Hurry Up!!!</p>
+                    <p class="shop-top">SHOP NOW</p>
+                </div>
+                <div class="fg-image-1">
+                    <img src="./images/smoothie.png" width="320" alt="Smoothie">
+                </div>
+            </div>
+            <div class="veggies-con">
+                <div class="text-of-image2-con">
+                    <div class="text-con">
+                        <p>20% Off</p>
+                        <div class="hr-sale">
+                            <hr style="width: 40%;">
+                            <span
+                                style=" color: rgb(30, 50, 50); font-size: 15px; line-height: 2px;">SALE</span>
+                        </div>
+                        <p style="margin-bottom: 20px;">Fruits & Vegetables</p>
+                        <a class="shop-collection" href="#"
+                            style="text-decoration: none; letter-spacing: 0.2; color: darkslategray; font-size: 1rem;">Shop
+                            Collection
+                            <img src="./images/arrow-right.svg" alt="Arrow right image">
+                        </a>
+                    </div>
+                    <div class="fg-image-2">
+                        <img src="./images/veggies.png" height="230"
+                            alt="veggies">
+                    </div>
+                </div>
+
+                <div class="text-of-image3-con">
+                    <div class="text-con-2">
+                        <p>15% Off</p>
+                        <div class="hr-sales">
+                            <hr style="width: 40%;">
+                            <span
+                                style="font-size: 15px; line-height: 2px;">SALE</span>
+                        </div>
+                        <p style="margin-bottom: 20px;">Baked Products</p>
+                        <a href="#" class="shop-collections"
+                            style="text-decoration: none; letter-spacing: 0.2; color: darkslategray; font-size: 1rem;">Shop Collection
+                            <img src="./images/arrow-right.svg" alt="Arrow right image">
+                        </a>
+                    </div>
+                    <div class="fg-image-3">
+                        <img src="./images/bakings.png" height="230"
+                            alt="bakings">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--  category section with button -->
+    <div class="category-and-buttons">
+        <div class="category-heading"
+            style="display: flex; justify-content: space-between; align-items: center; font-size: 2rem;">
+            <div class="animate__animated animate__slideInUp" style="letter-spacing: 1; font-family: 'Garamond';">
+                Category</div>
+            <div class="all-categories" style="font-size: 1.5rem;">
+                <span> View all Categories <i class="bi bi-arrow-right-short"></i></span>
+                <button class="btn" type="button"
+                    style="background-color: lightgrey; border: none; border-radius: 10px; padding: 0.5rem;">
+                    <i class="bi bi-chevron-left"></i>
+                </button>
+                <button class="btn btn-primary" type="button"
+                    style="background-color: lightgrey; border: none; border-radius: 10px; padding: 0.5rem;">
+                    <i class="bi bi-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+        <!-- category sub sections -->
+        <div class="category-sections"
+            style="display: flex; justify-content: space-around; gap: 20px; width: 100%; letter-spacing: 0; margin-top: 60px;">
+            <div class="sub-category-section-1">
+                <a href="#" style="text-decoration: none; color: black;">
+                    <img src="./images/broccoli.png" alt="broccoli" style="margin-left: 35px; margin-bottom: 20px;">
+                    <h4 style="font-weight: 600; font-size: 1.2rem;">Fruits & Veges</h4>
+                </a>
+            </div>
+            <div class="sub-category-section-2"
+                style="width: 250px; border: 1px solid whitesmoke; height: 250px; border-radius: 18px; padding: 10px; display: flex; justify-content: center; align-items: center;">
+                <a href="#" style="text-decoration: none; color: black;">
+                    <img src="./images/drinks.png" alt="" style="margin-left: 10px; margin-bottom: 20px;">
+                    <h4 style="font-weight: 600; font-size: 1.2rem;">Drinks</h4>
+                </a>
+            </div>
+            <div class="sub-category-section-3"
+                style="width: 250px; border: 1px solid whitesmoke; height: 250px; border-radius: 18px; padding: 10px; display: flex; justify-content: center; align-items: center;">
+                <a href="#" style="text-decoration: none; color: black;">
+                    <img src="./images/lollipop.png" width="40" alt="" style="margin-left: 25px; margin-bottom: 20px;">
+                    <h4 style="font-weight: 600; font-size: 1.2rem;">Chocolates</h4>
+                </a>
+            </div>
+            <div class="sub-category-section-4"
+                style="width: 250px; border: 1px solid whitesmoke; height: 250px; border-radius: 18px; padding: 10px; display: flex; justify-content: center; align-items: center;">
+                <a href="#" style="text-decoration: none; color: black;">
+                    <img src="./images/bake.png" width="40" alt="" style="margin-left: 10px; margin-bottom: 20px;">
+                    <h4 style="font-weight: 600; font-size: 1.2rem;">Bakings</h4>
+                </a>
+            </div>
+            <div class="sub-category-section-5"
+                style="width: 250px; border: 1px solid whitesmoke; height: 250px; border-radius: 18px; padding: 10px; display: flex; justify-content: center; align-items: center;">
+                <a href="#" style="text-decoration: none; color: black;">
+                    <img src="./images/panna-cotta.png" width="40" alt="" style="margin-left: 8px; margin-bottom: 20px;">
+                    <h4 style="font-weight: 600; font-size: 1.2rem;">Desserts</h4>
+                </a>
+            </div>
+            <div class="sub-category-section-6"
+                style="width: 250px; border: 1px solid whitesmoke; height: 250px; border-radius: 18px; padding: 10px; display: flex; justify-content: center; align-items: center;">
+                <a href="#" style="text-decoration: none; color: black;">
+                    <img src="./images/spices.png" width="40" alt="" style="margin-left: 8px; margin-bottom: 20px;">
+                    <h4 style="font-weight: 600; font-size: 1.2rem;">Spices</h4>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- new arrivals after categories -->
+    <div class="arrivals-heading">
+        <div class="animate__animated animate__slideInUp">
+            <h1 style="margin-top: 30px; letter-spacing: 0;">Newly Arrived Brands</h1>
+        </div>
+        <div class="arrival-cat">
+            <span><b>View all Categories </b><i class="bi bi-arrow-right-short"></i></span>
+            <button class="btn-2" type="button"
+                style="background-color: lightgrey !important; border: none !important; border-radius: 15px !important; padding: 10px;">
+                <i class="bi bi-chevron-left"></i>
+            </button>
+            <button class="btn btn-primary" type="button"
+                style="background-color: lightgrey !important; border: none !important; margin-right: 30px !important; padding: 10px; border-radius: 15px !important;">
+                <i class="bi bi-chevron-right"></i>
+            </button>
+        </div>
+    </div>
+    <!-- Arrivals sub sections -->
+    <div class="arrivals-sub-sections"
+        style="display: flex; justify-content: space-around; flex-wrap: wrap; gap: 10px; width: 100%; letter-spacing: 0; margin-top: 60px;">
+        <div class="sub-arrivals-section-1"
+            style="width: 350px; height: 120px; box-shadow: 10px 10px 5px 0 lightgray; border-radius: 18px; padding: 10px; display: flex; justify-content: start; align-items: center;">
+            <img src="./images/honey.jpg" width="100px" alt="">
+            <div class="arr-sub-text-1" style="margin: 15px;">
+                <h3> Amber Jar </h3>
+                <p style="font-size: 1rem;">Honey best nectar you wish to get</p>
+            </div>
+        </div>
+        <div class="sub-arrivals-section-2"
+            style="width: 350px; height: 120px; box-shadow: 10px 10px 5px 0 lightgray; border-radius: 18px; padding: 10px; display: flex; justify-content: center; align-items: center;">
+            <img src="./images/dryleaves.jpg" width="100px" alt="">
+            <div class="arr-sub-text-2" style="margin: 15px;">
+                <h3>Dried Leaves</h3>
+                <p style="font-size: 1rem;">Organically Sun Dried Just for You</p>
+            </div>
+        </div>
+        <div class="sub-arrivals-section-3"
+            style="width: 350px; height: 120px; box-shadow: 10px 10px 5px 0 lightgray; border-radius: 18px; padding: 10px; display: flex; justify-content: center; align-items: center;">
+            <img src="./images/box.jpg" width="100px" alt="">
+            <div class="arr-sub-text-3" style="margin: 15px;">
+                <h3>Lunch box</h3>
+                <p style="font-size: 1rem;">Instant deliveries to your doorstep</p>
+            </div>
+        </div>
+        <div class="sub-arrivals-section-4"
+            style="width: 350px; height: 120px; box-shadow: 10px 10px 5px 0 lightgray; border-radius: 18px; padding: 10px; display: flex; justify-content: center; align-items: center;">
+            <img src="./images/slurp.jpg" width="100px" alt="">
+            <div class="arr-sub-text-4" style="margin: 15px;">
+                <h3>Millet Slurpp!</h3>
+                <p style="font-size: 1rem;">Healthy Batters of millets for Gut health</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- trending products section -->
+
+    <div class="trending-section">
+        <div class="trending-heading">
+            <div class="animate__animated animate__slideInUp">
+                <h1 style="letter-spacing: 1;">Trending Products</h1>
+            </div>
+            <div class="trending-text-end">
+                <div class="item-1">
+                    <a href="#" target="_self">ALL</a>
+                </div>
+                <div class="item-2">
+                    <a href="#" target="_self">FRUITS & VEGES</a>
+                </div>
+                <div class="item-3">
+                    <a href="#" target="_self">JUICES</a>
+                </div>
+            </div>
+        </div>
+        <!-- trending sub sections -->
+        <div class="trending-sub-section">
+            <div class="sub-trending-cons-1">
+                <div class="trening-img-con-1">
+                    <img src="./images/bananas.png" alt="bananas">
+                </div>
+                <div class="top-img-1">
+                    <span>-32%</span>
+                    <span class="heart-hover"><i class="bi bi-suit-heart"></i></span>
+                </div>
+                <h3 class="nunito-try" style="margin-left: 20px; letter-spacing: 0.5;">Fresh Bananas</h3>
+                <div class="units" style="margin-left: 20px;">
+                    <span style="font-size: small; color: darkslategrey;">1 UNIT</span>
+                    <span><img src="./images/star.png" width="15" height="15" alt="star" style="margin-top: 5px;"></span>
+                    <span>4.5</span>
+                </div>
+                <h2 style="margin: 10px; margin-left: 20px;"><img src="./images/rupee-indian.png" height="15" width="20"
+                        alt="">79</h2>
+                <div class="buttons" style="display: flex; justify-content: space-between;">
+                    <div class="minus-plus" style="margin-left: 20px;">
+                        <button class="minus"
+                            style="padding-left: 7px; padding-right: 7px; font-weight: bold; font-size: 1.2rem;">-</button>
+                        <span><b style="color: darkslategrey;">1</b></span>
+                        <button class="plus"
+                            style="padding-left: 5px; padding-right: 5px; font-weight: bold; font-size: 1rem;">+</button>
+                    </div>
+                    <div class="add-to-cart" style="color: darkslategray; margin-right: 10px;">
+                        Add to Cart
+                    </div>
+                </div>
+            </div>
+            <div class="sub-trending-cons-2">
+                <div class="trening-img-con-2">
+                    <img src="./images/cookies.png" alt="cookies">
+                </div>
+                <div class="top-img-2">
+                    <span>-30%</span>
+                    <span class="heart-hover"><i class="bi bi-suit-heart"></i></span>
+                </div>
+                <h3 class="nunito-try" style="margin-left: 20px; letter-spacing: 0.5;">Crunchy Cookies</h3>
+                <div class="units" style="margin-left: 20px;">
+                    <span style="font-size: small; color: darkslategrey;">1 UNIT</span>
+                    <span><img src="./images/star.png" width="15" height="15" alt="star" style="margin-top: 5px;"></span>
+                    <span>4.5</span>
+                </div>
+                <h2 style="margin: 10px; margin-left: 20px;"><img src="./images/rupee-indian.png" height="15" width="20"
+                        alt="">113</h2>
+                <div class="buttons" style="display: flex; justify-content: space-between;">
+                    <div class="minus-plus" style="margin-left: 20px;">
+                        <button class="minus"
+                            style="padding-left: 7px; padding-right: 7px; font-weight: bold; font-size: 1.2rem;">-</button>
+                        <span><b style="color: darkslategrey;">1</b></span>
+                        <button class="plus"
+                            style="padding-left: 5px; padding-right: 5px; font-weight: bold; font-size: 1rem;">+</button>
+                    </div>
+                    <div class="add-to-cart" style="color: darkslategray; margin-right: 10px;">
+                        Add to Cart
+                    </div>
+                </div>
+            </div>
+            <div class="sub-trending-cons-3">
+                <div class="trening-img-con-3">
+                    <img src="./images/cucumber.png" alt="cucumber">
+                </div>
+                <div class="top-img-3">
+                    <span>-10%</span>
+                    <span class="heart-hover"><i class="bi bi-suit-heart"></i></span>
+                </div>
+                <h3 class="nunito-try" style="margin-left: 20px; letter-spacing: 0.5;">Organic Fresh Cucumbers</h3>
+                <div class="units" style="margin-left: 20px;">
+                    <span style="font-size: small; color: darkslategrey;">1 UNIT</span>
+                    <span><img src="./images/star.png" width="15" height="15" alt="star" style="margin-top: 5px;"></span>
+                    <span>4.5</span>
+                </div>
+                <h2 style="margin: 10px; margin-left: 20px;"><img src="./images/rupee-indian.png" height="15" width="20"
+                        alt="">42</h2>
+                <div class="buttons" style="display: flex; justify-content: space-between;">
+                    <div class="minus-plus" style="margin-left: 20px;">
+                        <button class="minus"
+                            style="padding-left: 7px; padding-right: 7px; font-weight: bold; font-size: 1.2rem;">-</button>
+                        <span><b style="color: darkslategrey;">1</b></span>
+                        <button class="plus"
+                            style="padding-left: 5px; padding-right: 5px; font-weight: bold; font-size: 1rem;">+</button>
+                    </div>
+                    <div class="add-to-cart" style="color: darkslategray; margin-right: 10px;">
+                        Add to Cart
+                    </div>
+                </div>
+            </div>
+            <div class="sub-trending-cons-4">
+                <div class="trening-img-con-4">
+                    <img src="./images/milk.png" alt="Amul Milk">
+                </div>
+                <div class="top-img-4">
+                    <span>-25%</span>
+                    <span class="heart-hover"><i class="bi bi-suit-heart"></i></span>
+                </div>
+                <h3 class="nunito-try" style="margin-left: 20px; letter-spacing: 0.5;">Amul Milk</h3>
+                <div class="units" style="margin-left: 20px;">
+                    <span style="font-size: small; color: darkslategrey;">1 UNIT</span>
+                    <span><img src="./images/star.png" width="15" height="15" alt="star" style="margin-top: 5px;"></span>
+                    <span>4.5</span>
+                </div>
+                <h2 style="margin: 10px; margin-left: 20px;"><img src="./images/rupee-indian.png" height="15" width="20"
+                        alt="">60</h2>
+                <div class="buttons" style="display: flex; justify-content: space-between;">
+                    <div class="minus-plus" style="margin-left: 20px;">
+                        <button class="minus"
+                            style="padding-left: 7px; padding-right: 7px; font-weight: bold; font-size: 1.2rem;">-</button>
+                        <span><b style="color: darkslategrey;">1</b></span>
+                        <button class="plus"
+                            style="padding-left: 5px; padding-right: 5px; font-weight: bold; font-size: 1rem;">+</button>
+                    </div>
+                    <div class="add-to-cart" style="color: darkslategray; margin-right: 10px;">
+                        Add to Cart
+                    </div>
+                </div>
+            </div>
+            <div class="sub-trending-cons-5">
+                <div class="trening-img-con-5">
+                    <img src="./images/berries.png" alt="juice">
+                </div>
+                <div class="top-img-5">
+                    <span>-28%</span>
+                    <span class="heart-hover"><i class="bi bi-suit-heart"></i></span>
+                </div>
+                <h3 class="nunito-try" style="margin-left: 20px; letter-spacing: 0.5;">Imported Raspberries</h3>
+                <div class="units" style="margin-left: 20px;">
+                    <span style="font-size: small; color: darkslategrey;">1 UNIT</span>
+                    <span><img src="./images/star.png" width="15" height="15" alt="star" style="margin-top: 5px;"></span>
+                    <span>4.5</span>
+                </div>
+                <h2 style="margin: 10px; margin-left: 20px;"><img src="./images/rupee-indian.png" height="15" width="20"
+                        alt="">30</h2>
+                <div class="buttons" style="display: flex; justify-content: space-between;">
+                    <div class="minus-plus" style="margin-left: 20px;">
+                        <button class="minus"
+                            style="padding-left: 7px; padding-right: 7px; font-weight: bold; font-size: 1.2rem;">-</button>
+                        <span><b style="color: darkslategrey;">1</b></span>
+                        <button class="plus"
+                            style="padding-left: 5px; padding-right: 5px; font-weight: bold; font-size: 1rem;">+</button>
+                    </div>
+                    <div class="add-to-cart" style="color: darkslategray; margin-right: 10px;">
+                        Add to Cart
+                    </div>
+                </div>
+            </div>
+            <div class="sub-trending-cons-6">
+                <div class="trening-img-con-6">
+                    <img src="./images/juice.png" alt="juice">
+                </div>
+                <div class="top-img-6">
+                    <span>-18%</span>
+                    <span class="heart-hover"><i class="bi bi-suit-heart"></i></span>
+                </div>
+                <h3 class="nunito-try" style="margin-left: 20px; letter-spacing: 0.5;">Sunstar Fresh Melon Juice</h3>
+                <div class="units" style="margin-left: 20px;">
+                    <span style="font-size: small; color: darkslategrey;">1 UNIT</span>
+                    <span><img src="./images/star.png" width="15" height="15" alt="star" style="margin-top: 5px;"></span>
+                    <span>4.5</span>
+                </div>
+                <h2 style="margin: 10px; margin-left: 20px;"><img src="./images/rupee-indian.png" height="15" width="20"
+                        alt="">129</h2>
+                <div class="buttons" style="display: flex; justify-content: space-between;">
+                    <div class="minus-plus" style="margin-left: 20px;">
+                        <button class="minus"
+                            style="padding-left: 7px; padding-right: 7px; font-weight: bold; font-size: 1.2rem;">-</button>
+                        <span><b style="color: darkslategrey;">1</b></span>
+                        <button class="plus"
+                            style="padding-left: 5px; padding-right: 5px; font-weight: bold; font-size: 1rem;">+</button>
+                    </div>
+                    <div class="add-to-cart" style="color: darkslategray; margin-right: 10px;">
+                        Add to Cart
+                    </div>
+                </div>
+            </div>
+            <div class="sub-trending-cons-7">
+                <div class="trening-img-con-7">
+                    <img src="./images/milk.png" alt="milk">
+                </div>
+                <div class="top-img-7">
+                    <span>-40%</span>
+                    <span class="heart-hover"><i class="bi bi-suit-heart"></i></span>
+                </div>
+                <h3 class="nunito-try" style="margin-left: 20px; letter-spacing: 0.5;">Amul Fresh Milk</h3>
+                <div class="units" style="margin-left: 20px;">
+                    <span style="font-size: small; color: darkslategrey;">1 UNIT</span>
+                    <span><img src="./images/star.png" width="15" height="15" alt="star" style="margin-top: 5px;"></span>
+                    <span>4.5</span>
+                </div>
+                <h2 style="margin: 10px; margin-left: 20px;"><img src="./images/rupee-indian.png" height="15" width="20"
+                        alt="">54</h2>
+                <div class="buttons" style="display: flex; justify-content: space-between;">
+                    <div class="minus-plus" style="margin-left: 20px;">
+                        <button class="minus"
+                            style="padding-left: 7px; padding-right: 7px; font-weight: bold; font-size: 1.2rem;">-</button>
+                        <span><b style="color: darkslategrey;">1</b></span>
+                        <button class="plus"
+                            style="padding-left: 5px; padding-right: 5px; font-weight: bold; font-size: 1rem;">+</button>
+                    </div>
+                    <div class="add-to-cart" style="color: darkslategray; margin-right: 10px;">
+                        Add to Cart
+                    </div>
+                </div>
+            </div>
+            <div class="sub-trending-cons-8">
+                <div class="trening-img-con-8">
+                    <img src="./images/tomatoes.png" alt="tomatoes">
+                </div>
+                <div class="top-img-8">
+                    <span>-22%</span>
+                    <span class="heart-hover"><i class="bi bi-suit-heart"></i></span>
+                </div>
+                <h3 class="nunito-try" style="margin-left: 20px; letter-spacing: 0.5;">Cherry tomatoes hybrid</h3>
+                <div class="units" style="margin-left: 20px;">
+                    <span style="font-size: small; color: darkslategrey;">1 UNIT</span>
+                    <span><img src="./images/star.png" width="15" height="15" alt="star" style="margin-top: 5px;"></span>
+                    <span>4.5</span>
+                </div>
+                <h2 style="margin: 10px; margin-left: 20px;"><img src="./images/rupee-indian.png" height="15" width="20"
+                        alt="">44</h2>
+                <div class="buttons" style="display: flex; justify-content: space-between;">
+                    <div class="minus-plus" style="margin-left: 20px;">
+                        <button class="minus"
+                            style="padding-left: 7px; padding-right: 7px; font-weight: bold; font-size: 1.2rem;">-</button>
+                        <span><b style="color: darkslategrey;">1</b></span>
+                        <button class="plus"
+                            style="padding-left: 5px; padding-right: 5px; font-weight: bold; font-size: 1rem;">+</button>
+                    </div>
+                    <div class="add-to-cart" style="color: darkslategray; margin-right: 10px;">
+                        Add to Cart
+                    </div>
+                </div>
+            </div>
+            <div class="sub-trending-cons-9">
+                <div class="trening-img-con-9">
+                    <img src="./images/ketchup.png" alt="ketchup">
+                </div>
+                <div class="top-img-9">
+                    <span>-20%</span>
+                    <span class="heart-hover"><i class="bi bi-suit-heart"></i></span>
+                </div>
+                <h3 class="nunito-try" style="margin-left: 20px; letter-spacing: 0.5;">Tomato Ketchup</h3>
+                <div class="units" style="margin-left: 20px;">
+                    <span style="font-size: small; color: darkslategrey;">1 UNIT</span>
+                    <span><img src="./images/star.png" width="15" height="15" alt="star" style="margin-top: 5px;"></span>
+                    <span>4.5</span>
+                </div>
+                <h2 style="margin: 10px; margin-left: 20px;"><img src="./images/rupee-indian.png" height="15" width="15"
+                        alt="">79</h2>
+                <div class="buttons" style="display: flex; justify-content: space-between;">
+                    <div class="minus-plus" style="margin-left: 20px;">
+                        <button class="minus"
+                            style="padding-left: 7px; padding-right: 7px; font-weight: bold; font-size: 1.2rem;">-</button>
+                        <span><b style="color: darkslategrey;">1</b></span>
+                        <button class="plus"
+                            style="padding-left: 5px; padding-right: 5px; font-weight: bold; font-size: 1rem;">+</button>
+                    </div>
+                    <div class="add-to-cart" style="color: darkslategray; margin-right: 10px;">
+                        Add to Cart
+                    </div>
+                </div>
+            </div>
+            <div class="sub-trending-cons-10">
+                <div class="trening-img-con-10">
+                    <img src="./images/bananas.png" alt="bananas">
+                </div>
+                <div class="top-img-10">
+                    <span>-12%</span>
+                    <span class="heart-hover"><i class="bi bi-suit-heart"></i></span>
+                </div>
+                <h3 class="nunito-try" style="margin-left: 20px; letter-spacing: 0.5;">Fresh Riped Bananas</h3>
+                <div class="units" style="margin-left: 20px;">
+                    <span style="font-size: small; color: darkslategrey;">1 UNIT</span>
+                    <span><img src="./images/star.png" width="15" height="15" alt="star" style="margin-top: 5px;"></span>
+                    <span>4.5</span>
+                </div>
+                <h2 style="margin: 10px; margin-left: 20px;"><img src="./images/rupee-indian.png" height="15" width="20"
+                        alt="">79</h2>
+                <div class="buttons" style="display: flex; justify-content: space-between;">
+                    <div class="minus-plus" style="margin-left: 20px;">
+                        <button class="minus"
+                            style="padding-left: 7px; padding-right: 7px; font-weight: bold; font-size: 1.2rem;">-</button>
+                        <span><b style="color: darkslategrey;">1</b></span>
+                        <button class="plus"
+                            style="padding-left: 5px; padding-right: 5px; font-weight: bold; font-size: 1rem;">+</button>
+                    </div>
+                    <div class="add-to-cart" style="color: darkslategray; margin-right: 10px;">
+                        Add to Cart
+                    </div>
+                </div>
+            </div>
+            <div class="more-items"><button>More Items</button></div>
+        </div>
+    </div>
+    <div class="chocolate-and-muffins">
+        <div class="dark-chocolate">
+            <div class="choco-text">
+                <p style="color: orange; font-size: 1.5rem;">Upto 25% Off</p>
+                <p style="color: black; font-weight: bold; font-size: 2rem; letter-spacing: 0;">Luxa Dark Chocolate</p>
+                <p style="color: darkslategray;">Very tasty & creamy dark chocolate... What are you waiting for? Hurry
+                    Up!!!</p>
+                <button class="choco-shop"
+                    style="border: none; background-color: black; color: white; padding: 10px; border-radius: 10px; line-height: 1.2; margin: 20px;">SHOW
+                    NOW</button>
+            </div>
+            <div class="choco-img">
+                <img src="./images/dark-chocolate.png" alt="dark chocolate">
+            </div>
+        </div>
+        <div class="muffins-creamy">
+            <div class="muff-text">
+                <p style="color: orange; font-size: 1.5rem;">Upto 25% Off</p>
+                <p style="color: black; font-weight: bold; font-size: 2rem; letter-spacing: 0;">Creamy Muffins</p>
+                <p style="color: darkslategray;">Very tasty & creamy vanilla flavoured Muffins.. Hurry Up!!!</p>
+                <button class="muff-shop"
+                    style="border: none; background-color: black; color: white; padding: 10px; border-radius: 10px; line-height: 1.2; margin: 20px;">SHOW
+                    NOW</button>
+            </div>
+            <div class="muffins-img">
+                <img src="./images/muffins.png" width="270px" alt="muffins">
+            </div>
+        </div>
+    </div>
+    <div class="best-selling-products">
+        <div class="best-selling-heading">
+            <div class="animate__animated animate__slideInUp">
+                <h1 style="margin-top: 30px; letter-spacing: 0;">Best Selling Products</h1>
+            </div>
+            <div class="best-cat">
+                <span><b>View all Categories </b><i class="bi bi-arrow-right-short"></i></span>
+                <button class="btn-2" type="button"
+                    style="background-color: lightgrey !important; border: none !important; padding: 10px; border-radius: 15px !important;">
+                    <i class="bi bi-chevron-left"></i>
+                </button>
+                <button class="btn btn-primary" type="button"
+                    style="background-color: lightgrey !important; border: none !important; padding: 10px; margin-right: 30px !important; border-radius: 15px !important;">
+                    <i class="bi bi-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+        <!-- best sellings sub section -->
+        <div class="best-selling-sub-section">
+            <div class="sub-selling-cons-1">
+                <div class="sub-img-con-1">
+                    <img src="./images/bananas.png" alt="bananas">
+                </div>
+                <div class="sub-img-1">
+                    <span>-32%</span>
+                    <span class="heart-hover"><i class="bi bi-suit-heart"></i></span>
+                </div>
+                <h3 class="nunito-try" style="margin-left: 20px; letter-spacing: 0.5;">Organic Bananas</h3>
+                <div class="units" style="margin-left: 20px;">
+                    <span style="font-size: small; color: darkslategrey;">1 UNIT</span>
+                    <span><img src="./images/star.png" width="15" height="15" alt="star" style="margin-top: 5px;"></span>
+                    <span>4.5</span>
+                </div>
+                <h2 style="margin: 10px; margin-left: 20px;"><img src="./images/rupee-indian.png" height="15" width="20"
+                        alt="">79</h2>
+                <div class="buttons" style="display: flex; justify-content: space-between;">
+                    <div class="minus-plus" style="margin-left: 20px;">
+                        <button class="minus"
+                            style="padding-left: 7px; padding-right: 7px; font-weight: bold; font-size: 1.2rem;">-</button>
+                        <span><b style="color: darkslategrey;">1</b></span>
+                        <button class="plus"
+                            style="padding-left: 5px; padding-right: 5px; font-weight: bold; font-size: 1rem;">+</button>
+                    </div>
+                    <div class="add-to-cart" style="color: darkslategray; margin-right: 10px;">
+                        Add to Cart
+                    </div>
+                </div>
+            </div>
+            <div class="sub-selling-cons-2">
+                <div class="sub-img-con-2">
+                    <img src="./images/cookies.png" alt="cookies">
+                </div>
+                <div class="sub-img-2">
+                    <span>-16%</span>
+                    <span class="heart-hover"><i class="bi bi-suit-heart"></i></span>
+                </div>
+                <h3 class="nunito-try" style="margin-left: 20px; letter-spacing: 0.5;">Crunchy Cookies</h3>
+                <div class="units" style="margin-left: 20px;">
+                    <span style="font-size: small; color: darkslategrey;">1 UNIT</span>
+                    <span><img src="./images/star.png" width="15" height="15" alt="star" style="margin-top: 5px;"></span>
+                    <span>4.5</span>
+                </div>
+                <h2 style="margin: 10px; margin-left: 20px;"><img src="./images/rupee-indian.png" height="15" width="20"
+                        alt="">113</h2>
+                <div class="buttons" style="display: flex; justify-content: space-between;">
+                    <div class="minus-plus" style="margin-left: 20px;">
+                        <button class="minus"
+                            style="padding-left: 7px; padding-right: 7px; font-weight: bold; font-size: 1.2rem;">-</button>
+                        <span><b style="color: darkslategrey;">1</b></span>
+                        <button class="plus"
+                            style="padding-left: 5px; padding-right: 5px; font-weight: bold; font-size: 1rem;">+</button>
+                    </div>
+                    <div class="add-to-cart" style="color: darkslategray; margin-right: 10px;">
+                        Add to Cart
+                    </div>
+                </div>
+            </div>
+            <div class="sub-selling-cons-3">
+                <div class="sub-img-con-3">
+                    <img src="./images/cucumber.png" alt="cucumber">
+                </div>
+                <div class="sub-img-3">
+                    <span>-15%</span>
+                    <span class="heart-hover"><i class="bi bi-suit-heart"></i></span>
+                </div>
+                <h3 class="nunito-try" style="margin-left: 20px; letter-spacing: 0.5;">Organic Fresh Cucumbers</h3>
+                <div class="units" style="margin-left: 20px;">
+                    <span style="font-size: small; color: darkslategrey;">1 UNIT</span>
+                    <span><img src="./images/star.png" width="15" height="15" alt="star" style="margin-top: 5px;"></span>
+                    <span>4.5</span>
+                </div>
+                <h2 style="margin: 10px; margin-left: 20px;"><img src="./images/rupee-indian.png" height="15" width="20"
+                        alt="">42</h2>
+                <div class="buttons" style="display: flex; justify-content: space-between;">
+                    <div class="minus-plus" style="margin-left: 20px;">
+                        <button class="minus"
+                            style="padding-left: 7px; padding-right: 7px; font-weight: bold; font-size: 1.2rem;">-</button>
+                        <span><b style="color: darkslategrey;">1</b></span>
+                        <button class="plus"
+                            style="padding-left: 5px; padding-right: 5px; font-weight: bold; font-size: 1rem;">+</button>
+                    </div>
+                    <div class="add-to-cart" style="color: darkslategray; margin-right: 10px;">
+                        Add to Cart
+                    </div>
+                </div>
+            </div>
+            <div class="sub-selling-cons-4">
+                <div class="sub-img-con-4">
+                    <img src="./images/milk.png" alt="Amul Milk">
+                </div>
+                <div class="sub-img-4">
+                    <span>-15%</span>
+                    <span class="heart-hover"><i class="bi bi-suit-heart"></i></span>
+                </div>
+                <h3 class="nunito-try" style="margin-left: 20px; letter-spacing: 0.5;">Amul Milk</h3>
+                <div class="units" style="margin-left: 20px;">
+                    <span style="font-size: small; color: darkslategrey;">1 UNIT</span>
+                    <span><img src="./images/star.png" width="15" height="15" alt="star" style="margin-top: 5px;"></span>
+                    <span>4.5</span>
+                </div>
+                <h2 style="margin: 10px; margin-left: 20px;"><img src="./images/rupee-indian.png" height="15" width="20"
+                        alt="">60</h2>
+                <div class="buttons" style="display: flex; justify-content: space-between;">
+                    <div class="minus-plus" style="margin-left: 20px;">
+                        <button class="minus"
+                            style="padding-left: 7px; padding-right: 7px; font-weight: bold; font-size: 1.2rem;">-</button>
+                        <span><b style="color: darkslategrey;">1</b></span>
+                        <button class="plus"
+                            style="padding-left: 5px; padding-right: 5px; font-weight: bold; font-size: 1rem;">+</button>
+                    </div>
+                    <div class="add-to-cart" style="color: darkslategray; margin-right: 10px;">
+                        Add to Cart
+                    </div>
+                </div>
+            </div>
+            <div class="sub-selling-cons-6">
+                <div class="sub-img-con-6">
+                    <img src="./images/juice.png" alt="juice">
+                </div>
+                <div class="sub-img-6">
+                    <span>-18%</span>
+                    <span class="heart-hover"><i class="bi bi-suit-heart"></i></span>
+                </div>
+                <h3 class="nunito-try" style="margin-left: 20px; letter-spacing: 0.5;">Sunstar Fresh Melon Juice</h3>
+                <div class="units" style="margin-left: 20px;">
+                    <span style="font-size: small; color: darkslategrey;">1 UNIT</span>
+                    <span><img src="./images/star.png" width="15" height="15" alt="star" style="margin-top: 5px;"></span>
+                    <span>4.5</span>
+                </div>
+                <h2 style="margin: 10px; margin-left: 20px;"><img src="./images/rupee-indian.png" height="15" width="20"
+                        alt="">129</h2>
+                <div class="buttons" style="display: flex; justify-content: space-between;">
+                    <div class="minus-plus" style="margin-left: 20px;">
+                        <button class="minus"
+                            style="padding-left: 7px; padding-right: 7px; font-weight: bold; font-size: 1.2rem;">-</button>
+                        <span><b style="color: darkslategrey;">1</b></span>
+                        <button class="plus"
+                            style="padding-left: 5px; padding-right: 5px; font-weight: bold; font-size: 1rem;">+</button>
+                    </div>
+                    <div class="add-to-cart" style="color: darkslategray; margin-right: 10px;">
+                        Add to Cart
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- discount form section -->
+    <div class="discount-form-section">
+        <div class="form-text-container">
+            <form action="./responseform.html" class="animate__animated animate__slideInDown">
+                <label for="name">Name</label><br>
+                <input type="text" id="name" placeholder="Enter your Name" pattern="[A-Za-z]+{5,10}"><br>
+                <label for="email">Email</label><br>
+                <input type="email" id="email" placeholder="abc@gmail.com"><br>
+                <input type="checkbox" id="subscribe">
+                <label for="subscribe">Subscribe to Newsletter</label><br>
+                <input type="submit" class="submit animate__animated animate__bounceInUp" value="Submit">
+            </form>
+        </div>
+        <div class="form-container">
+            <h1 class="discount-text animate__animated animate__pulse">Get <b class="animate__animated animate__pulse"
+                    style="color: orange;">25% Discount</b><br> on your first <br> purchase</h1>
+            <p class="discount-sub-text">Quick! Only 24 hours left to snag a jaw-dropping 50% off <br> your next
+                delivery.</p>
+        </div>
+    </div>
+    <!-- Recent Blog section -->
+    <div class="recent-blog-section">
+        <div class="blog-heading-section" style="display: flex; justify-content: space-between; margin-bottom: 40px; margin-left: 20px; margin-right: 20px;">
+            <div class="blog animate__animated animate__slideInUp">
+                <h1 style="margin-top: 30px; letter-spacing: 0;">Our Recent Blog</h1>
+            </div>
+            <div class="blog-cat">
+                <span><b>Read all Articles </b><i class="bi bi-arrow-right-short"></i></span>
+            </div>
+        </div>
+        <div class="blog-sub-section">
+            <div class="blog-1">
+                <div class="blog-img-con-1">
+                    <img src="./images/blog-1.jpg" alt="">
+                    <div class="date-time" style="margin: 20px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-calendar" viewBox="0 0 16 16">
+                            <path
+                                d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z" />
+                        </svg> 02 FEB 2025
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-marker-tip" viewBox="0 0 16 16">
+                            <path
+                                d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-4.5 6.064-1.281-4.696A.5.5 0 0 0 9.736 9H6.264a.5.5 0 0 0-.483.368l-1.28 4.696A6.97 6.97 0 0 0 8 15c1.275 0 2.47-.34 3.5-.936m.873-.598a7 7 0 1 0-8.746 0l1.19-4.36a1.5 1.5 0 0 1 1.31-1.1l1.155-3.851c.213-.713 1.223-.713 1.436 0l1.156 3.851a1.5 1.5 0 0 1 1.31 1.1z" />
+                        </svg> tips & tricks
+                        <h1 class="h1-blog-1" style="margin: 10px;">Top 10 casual looking foods your kids</h1>
+                        <p class="p1">A balanced diet supports a healthy lifestyle and prevents chronic diseases. Fresh
+                            fruits, vegetables, whole grains, and lean proteins boost energy and immunity.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="blog-2">
+                <div class="blog-img-con-2">
+                    <img src="./images/blog-2.jpg" alt="">
+                    <div class="date-time-2" style="margin: 20px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-calendar" viewBox="0 0 16 16">
+                            <path
+                                d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z" />
+                        </svg> 02 FEB 2025
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-marker-tip" viewBox="0 0 16 16">
+                            <path
+                                d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-4.5 6.064-1.281-4.696A.5.5 0 0 0 9.736 9H6.264a.5.5 0 0 0-.483.368l-1.28 4.696A6.97 6.97 0 0 0 8 15c1.275 0 2.47-.34 3.5-.936m.873-.598a7 7 0 1 0-8.746 0l1.19-4.36a1.5 1.5 0 0 1 1.31-1.1l1.155-3.851c.213-.713 1.223-.713 1.436 0l1.156 3.851a1.5 1.5 0 0 1 1.31 1.1z" />
+                        </svg> tips & tricks
+                        <h1 class="h1-blog-2" style="margin: 10px;">Top 10 Dried Nuts and Seeds for Gut health</h1>
+                        <p class="p2">Healthy food nourishes the body with essential nutrients, promoting overall
+                            well-being. A balanced diet supports a healthy lifestyle and prevents chronic diseases.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="blog-3">
+                <div class="blog-img-con-3">
+                    <img src="./images/blog-3.jpg" alt="">
+                    <div class="date-time-3" style="margin: 20px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-calendar" viewBox="0 0 16 16">
+                            <path
+                                d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z" />
+                        </svg> 02 FEB 2025
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-marker-tip" viewBox="0 0 16 16">
+                            <path
+                                d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-4.5 6.064-1.281-4.696A.5.5 0 0 0 9.736 9H6.264a.5.5 0 0 0-.483.368l-1.28 4.696A6.97 6.97 0 0 0 8 15c1.275 0 2.47-.34 3.5-.936m.873-.598a7 7 0 1 0-8.746 0l1.19-4.36a1.5 1.5 0 0 1 1.31-1.1l1.155-3.851c.213-.713 1.223-.713 1.436 0l1.156 3.851a1.5 1.5 0 0 1 1.31 1.1z" />
+                        </svg> tips & tricks
+                        <h1 class="h1-blog-3" style="margin: 10px;">Top 10 Greens like Broccoli Organically grown</h1>
+                        <p class="p3">Fresh fruits, vegetables, whole grains, and lean proteins boost energy and
+                            immunity. A balanced diet supports a healthy lifestyle and prevents chronic diseases.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- app info -->
+    <div class="app-container">
+        <div class="foodmart-app" style="width: 95%;">
+            <div class="app-img">
+                <img src="./images/phone.png" alt="">
+            </div>
+            <div class="app-text">
+                <h1 style="font-size: 2rem; letter-spacing: 0; line-height: 2;"
+                    class="animate__animated animate__zoomIn">Shop faster with foodmart App</h1>
+                <p class="h4" style="font-size: 1rem; color: darkslategray; margin: 10px; line-height: 1.8;">A FoodMart
+                    app offers a seamless grocery shopping experience with a wide range of fresh and packaged foods.
+                    Users can browse, add items to their cart, and order groceries for home delivery or pickup. It
+                    ensures convenience, time savings, and hassle-free shopping.</p>
+                <div class="app-downloads">
+                    <img src="./images/app-1.jpg" alt="">
+                    <img src="./images/app-2.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- final page woaahh -->
+    <div class="peoples-page">
+        <h1 style="margin: 20px; letter-spacing: 0;">People are also looking for</h1>
+        <div class="first-row">
+            <a href="#">Blue diamon Almonds</a>
+            <a href="#">Salty kettle Corn</a>
+            <a href="#">Chobian Greek Yogurt</a>
+            <a href="#">Sweet Vanilla Yogurt</a>
+            <a href="#">Angie's Boomchickapop Corn</a>
+            <a href="#">Foster Farms takeout Crispy Wings</a>
+            <a href="#">Flavor-packed, crunch attack!</a>
+            <a href="#">Crunchy, juicy, irresistible!</a>
+            <a href="#">Cheesy Stuffed Burgers</a>
+            <a href="#">Chocolate Lava Cake</a>
+            <a href="#">Mango Smoothie</a>
+            <a href="#">Crunchy Tacos </a>
+            <a href="#">Mexican Cheesy Burst Pizza</a>
+            <a href="#">Honey Glazed Donuts</a>
+            <a href="#">Garlic Parmesan Fries</a>
+            <a href="#">Caramel Drizzled Popcorn</a>
+            <a href="#">Bold crunch, epic flavor!</a>
+            <a href="#">Lemon Herb Grilled Chicken</a>
+            <a href="#">Chicken Meatballs</a>
+        </div>
+        <div class="second-row">
+            <div class="item-1st">
+                <img src="./images/shopping-cart.png" width="30" height="30" alt="cart">
+                <div class="sub-content-1">
+                    <h2>Free delivery</h2>
+                    <p>Fresh groceries, delivered free—right to your doorstep!</p>
+                </div>
+            </div>
+            <div class="item-2nd">
+                <div class="sub-icon-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="M19.63 3.65a1 1 0 0 0-.84-.2a8 8 0 0 1-6.22-1.27a1 1 0 0 0-1.14 0a8 8 0 0 1-6.22 1.27a1 1 0 0 0-.84.2a1 1 0 0 0-.37.78v7.45a9 9 0 0 0 3.77 7.33l3.65 2.6a1 1 0 0 0 1.16 0l3.65-2.6A9 9 0 0 0 20 11.88V4.43a1 1 0 0 0-.37-.78ZM18 11.88a7 7 0 0 1-2.93 5.7L12 19.77l-3.07-2.19A7 7 0 0 1 6 11.88v-6.3a10 10 0 0 0 6-1.39a10 10 0 0 0 6 1.39Zm-4.46-2.29l-2.69 2.7l-.89-.9a1 1 0 0 0-1.42 1.42l1.6 1.6a1 1 0 0 0 1.42 0L15 11a1 1 0 0 0-1.42-1.42Z">
+                        </path>
+                    </svg>
+                </div>
+                <div class="sub-content-2">
+                    <h2>100% secure payment</h2>
+                    <p>Fresh groceries, delivered free—right to your doorstep!</p>
+                </div>
+            </div>
+            <div class="item-3rd">
+                <div class="sub-icon-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="M22 5H2a1 1 0 0 0-1 1v4a3 3 0 0 0 2 2.82V22a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1v-9.18A3 3 0 0 0 23 10V6a1 1 0 0 0-1-1Zm-7 2h2v3a1 1 0 0 1-2 0Zm-4 0h2v3a1 1 0 0 1-2 0ZM7 7h2v3a1 1 0 0 1-2 0Zm-3 4a1 1 0 0 1-1-1V7h2v3a1 1 0 0 1-1 1Zm10 10h-4v-2a2 2 0 0 1 4 0Zm5 0h-3v-2a4 4 0 0 0-8 0v2H5v-8.18a3.17 3.17 0 0 0 1-.6a3 3 0 0 0 4 0a3 3 0 0 0 4 0a3 3 0 0 0 4 0a3.17 3.17 0 0 0 1 .6Zm2-11a1 1 0 0 1-2 0V7h2ZM4.3 3H20a1 1 0 0 0 0-2H4.3a1 1 0 0 0 0 2Z">
+                        </path>
+                    </svg>
+                </div>
+                <div class="sub-content-3">
+                    <h2>Quality guarantee</h2>
+                    <p>Fresh groceries, delivered free—right to your doorstep!</p>
+                </div>
+            </div>
+            <div class="item-4th">
+                <div class="sub-icon-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="M12 8.35a3.07 3.07 0 0 0-3.54.53a3 3 0 0 0 0 4.24L11.29 16a1 1 0 0 0 1.42 0l2.83-2.83a3 3 0 0 0 0-4.24A3.07 3.07 0 0 0 12 8.35Zm2.12 3.36L12 13.83l-2.12-2.12a1 1 0 0 1 0-1.42a1 1 0 0 1 1.41 0a1 1 0 0 0 1.42 0a1 1 0 0 1 1.41 0a1 1 0 0 1 0 1.42ZM12 2A10 10 0 0 0 2 12a9.89 9.89 0 0 0 2.26 6.33l-2 2a1 1 0 0 0-.21 1.09A1 1 0 0 0 3 22h9a10 10 0 0 0 0-20Zm0 18H5.41l.93-.93a1 1 0 0 0 0-1.41A8 8 0 1 1 12 20Z">
+                        </path>
+                    </svg>
+                </div>
+                <div class="sub-content-4">
+                    <h2>guaranteed savings</h2>
+                    <p>Fresh groceries, delivered free—right to your doorstep!</p>
+                </div>
+            </div>
+            <div class="item-5th">
+                <div class="sub-icon-5">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="M18 7h-.35A3.45 3.45 0 0 0 18 5.5a3.49 3.49 0 0 0-6-2.44A3.49 3.49 0 0 0 6 5.5A3.45 3.45 0 0 0 6.35 7H6a3 3 0 0 0-3 3v2a1 1 0 0 0 1 1h1v6a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3v-6h1a1 1 0 0 0 1-1v-2a3 3 0 0 0-3-3Zm-7 13H8a1 1 0 0 1-1-1v-6h4Zm0-9H5v-1a1 1 0 0 1 1-1h5Zm0-4H9.5A1.5 1.5 0 1 1 11 5.5Zm2-1.5A1.5 1.5 0 1 1 14.5 7H13ZM17 19a1 1 0 0 1-1 1h-3v-7h4Zm2-8h-6V9h5a1 1 0 0 1 1 1Z">
+                        </path>
+                    </svg>
+                </div>
+                <div class="sub-content-5">
+                    <h2>Daily offers</h2>
+                    <p>Fresh groceries, delivered free—right to your doorstep!</p>
+                </div>
+            </div>
+            <div class="item-6th">
+                <img src="./images/logo.png" alt="logo image">
+                <div class="item-6-icons" style="display: flex; gap: 1rem; justify-content: center; ">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                        class="bi bi-facebook" viewBox="0 0 16 16">
+                        <path
+                            d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                        class="bi bi-twitter" viewBox="0 0 16 16">
+                        <path
+                            d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                        class="bi bi-youtube" viewBox="0 0 16 16">
+                        <path
+                            d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                        class="bi bi-instagram" viewBox="0 0 16 16">
+                        <path
+                            d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                        class="bi bi-amazon" viewBox="0 0 16 16">
+                        <path
+                            d="M10.813 11.968c.157.083.36.074.5-.05l.005.005a90 90 0 0 1 1.623-1.405c.173-.143.143-.372.006-.563l-.125-.17c-.345-.465-.673-.906-.673-1.791v-3.3l.001-.335c.008-1.265.014-2.421-.933-3.305C10.404.274 9.06 0 8.03 0 6.017 0 3.77.75 3.296 3.24c-.047.264.143.404.316.443l2.054.22c.19-.009.33-.196.366-.387.176-.857.896-1.271 1.703-1.271.435 0 .929.16 1.188.55.264.39.26.91.257 1.376v.432q-.3.033-.621.065c-1.113.114-2.397.246-3.36.67C3.873 5.91 2.94 7.08 2.94 8.798c0 2.2 1.387 3.298 3.168 3.298 1.506 0 2.328-.354 3.489-1.54l.167.246c.274.405.456.675 1.047 1.166ZM6.03 8.431C6.03 6.627 7.647 6.3 9.177 6.3v.57c.001.776.002 1.434-.396 2.133-.336.595-.87.961-1.465.961-.812 0-1.286-.619-1.286-1.533M.435 12.174c2.629 1.603 6.698 4.084 13.183.997.28-.116.475.078.199.431C13.538 13.96 11.312 16 7.57 16 3.832 16 .968 13.446.094 12.386c-.24-.275.036-.4.199-.299z" />
+                        <path
+                            d="M13.828 11.943c.567-.07 1.468-.027 1.645.204.135.176-.004.966-.233 1.533-.23.563-.572.961-.762 1.115s-.333.094-.23-.137c.105-.23.684-1.663.455-1.963-.213-.278-1.177-.177-1.625-.13l-.09.009q-.142.013-.233.024c-.193.021-.245.027-.274-.032-.074-.209.779-.556 1.347-.623" />
+                    </svg>
+                </div>
+            </div>
+            <div class="item-7th">
+                <div class="sub-content-7">
+                    <h2>Ultras</h2>
+                    <p>About Us</p>
+                    <p>Conditions</p>
+                    <p>Our Journals</p>
+                    <p>Careers</p>
+                    <p>Affiliate Program</p>
+                    <p>Ultras Press</p>
+                </div>
+            </div>
+            <div class="item-8th">
+                <div class="sub-content-8">
+                    <h2>Customer Service</h2>
+                    <p>FAQ</p>
+                    <p>Contact</p>
+                    <p>Privacy policy</p>
+                    <p>Returns and Refunds</p>
+                    <p>Cookie guidelines</p>
+                    <p>Delivery Information</p>
+                </div>
+            </div>
+            <div class="item-9th">
+                <div class="sub-content-9">
+                    <h2>About us</h2>
+                    <p>Our Conditions</p>
+                    <p>Our Stores</p>
+                    <p>Our Locations</p>
+                    <p>Quality Management</p>
+                </div>
+            </div>
+            <div class="item-10th">
+                <div class="sub-content-10">
+                    <h2>Subscribe Us</h2>
+                    <p>Subscribe to our newsletter to get updates about our grand offers.</p>
+                    <input type="email" placeholder="Email Address" class="email">
+                    <input type="button" value="Subscribe" class="final-button">
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer"
+        style="padding: 1.5rem; background-color: rgb(255, 243, 237); color: gray; font-size: 1rem; letter-spacing: 1;">
+        <span><i class="bi bi-c-circle"></i></span>
+        <span>2025 Foodmart. All rights reserved.</span>
+        <div class="contact" style=" text-align: end;">
+            <span class="bi bi-whatsapp"> Feel free to <a href="#"
+                    style="text-decoration: none; color: darkslategray; font-size: 15px;">Contact Us</a></span>
+        </div>
+        </div>
+</body>
+
+</html>
