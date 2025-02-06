@@ -1619,7 +1619,7 @@ h1,.h4,h2{
     font-size: 0.9rem;
 }
 .second-row{
-    width: 90vw;
+    width: 80vw;
     display: grid;
     grid-template-columns: 150px 150px;
     grid-template-areas: 
@@ -1630,8 +1630,8 @@ h1,.h4,h2{
     'f9 f10';
     gap: 2rem;
     padding: 1rem;
-    margin-left: 20px;
-    width: 90%;
+    margin-left: 10px;
+    /* width: 90%; */
 }
 .item-6th{
     width: 80%;
